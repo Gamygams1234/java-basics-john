@@ -1,6 +1,6 @@
 package animal;
 
-public class Dog extends Animal{
+public class Dog extends Animal implements Loveable  {
 	static int dogCount = 0;
 	private int age;
 	private String breed;
@@ -86,6 +86,13 @@ public class Dog extends Animal{
 
 	public void setNumberOfLegs(int numberOfLegs) {
 		this.numberOfLegs = numberOfLegs;
+	}
+
+
+
+	@Override
+	public void isLoved() {
+		System.out.println(this.name + " is a loved dog.");
 	}
 
 }

@@ -12,10 +12,10 @@ public class PackageExampleClass {
 
 		Dog myDog = new Dog();
 		Cat myCat = new Cat();
-		System.out.println(myDog.getName());
-		
-		// the dog inherits the eat 
+	
 		myDog.eat();
+		
+		myDog.isLoved();
 		
 		// the cat will have a different eat since we overrided it
 		myCat.eat();
