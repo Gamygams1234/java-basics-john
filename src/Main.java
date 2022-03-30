@@ -1,24 +1,35 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		int num1 = 8;
-		int num2 = 16;
-	
-		System.out.println("The sum is "+ add(num1, num2));
-		sayHi();
-	}
-	// private means that it will only be accessed by this class
-	
-	private static int add(int a, int b){
-		return a + b;
+		Random rand = new Random();
+		int randomNumber = rand.nextInt(100) + 1;
 		
-	}
-	
-	private static void sayHi() {
-		System.out.println("Hi");
-	}
+		int guess;
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("Welcome to the guessing game.");
+		System.out.println("Please enter your guess.");
+		guess = userInput.nextInt();
+		
 
+			
+			while(guess!= randomNumber) {
+			if (guess< randomNumber) {
+				System.out.println("You have to guess higher. Try again");
+				guess = userInput.nextInt();
+				
+				}else {
+					System.out.println("You have to guess lower. Try again");
+					guess = userInput.nextInt();
+				}
+			}
+		
+			if (guess == randomNumber) {
+				System.out.println("Bitch you guessed it! You was right!");
+				System.out.println("The number was " + guess);
+			}	
 
+	}
 }
