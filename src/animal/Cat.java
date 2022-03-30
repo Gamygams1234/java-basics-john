@@ -1,6 +1,6 @@
-package animals;
+package animal;
 
-public class Horse {
+public class Cat extends Animal {
 	static int dogCount = 0;
 	private String name;
 	private int age;
@@ -8,8 +8,8 @@ public class Horse {
 	private String color;
 	private int numberOfLegs;
 	
-	public Horse() {
-		Horse.dogCount++;
+	public Cat() {
+		Cat.dogCount++;
 		name = "Fido";
 	}
 	
@@ -17,6 +17,9 @@ public class Horse {
 
 	void bark() {
 		System.out.println("Bark, my name is " + this.name);
+	}
+	public void eat() {
+		System.out.println("nom nom");
 	}
 	
 	static void printMetaDogInfo() {

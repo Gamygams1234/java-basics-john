@@ -1,6 +1,6 @@
-package animals;
+package animal;
 
-public class Dog {
+public class Horse {
 	static int dogCount = 0;
 	private String name;
 	private int age;
@@ -8,8 +8,8 @@ public class Dog {
 	private String color;
 	private int numberOfLegs;
 	
-	public Dog() {
-		Dog.dogCount++;
+	public Horse() {
+		Horse.dogCount++;
 		name = "Fido";
 	}
 	

@@ -2,8 +2,8 @@
 // default is com.revature
 package mainpackageexample;
 
-// this wiil import the animals
-import animals.Dog;
+import animal.Cat;
+import animal.Dog;
 
 public class PackageExampleClass {
 
@@ -11,8 +11,15 @@ public class PackageExampleClass {
 		// TODO Auto-generated method stub
 
 		Dog myDog = new Dog();
-		// if getName was private then getName could not be accessed
+		Cat myCat = new Cat();
 		System.out.println(myDog.getName());
+		
+		// the dog inherits the eat 
+		myDog.eat();
+		
+		// the cat will have a different eat since we overrided it
+		myCat.eat();
+	
 	}
 
 }

@@ -1,16 +1,15 @@
-package animals;
+package animal;
 
-public class Cat {
+public class Dog extends Animal{
 	static int dogCount = 0;
-	private String name;
 	private int age;
 	private String breed;
 	private String color;
 	private int numberOfLegs;
 	
-	public Cat() {
-		Cat.dogCount++;
-		name = "Fido";
+	public Dog() {
+		Dog.dogCount++;
+		this.name = "Fido";
 	}
 	
 
