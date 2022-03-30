@@ -8,7 +8,7 @@ public class Dog {
 	int numberOfLegs;
 	
 	void bark() {
-		System.out.println("Bark");
+		System.out.println("Bark, my name is " + this.name);
 	}
 
 }
