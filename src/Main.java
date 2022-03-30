@@ -11,11 +11,13 @@ public class Main {
 			
 			Dog yourDog = new Dog();
 			
+			myDog.setName("Reeses");
+			yourDog.setName("Donk");
+		
+			System.out.println(myDog.getName());
+			System.out.println(yourDog.getName());
 			
-			myDog.bark();
-			System.out.println(Dog.dogCount);
 			
-			Dog.printMetaDogInfo();
 			
 	
 
